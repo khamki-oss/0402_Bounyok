@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ອາຫານລາວທີ່ນ່າກິນ - Delicious Laotian Food</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'phetsarath ot';
+        }
+        
+        body {
+            background-color: #f9f5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/placeholder.svg?height=400&width=1200');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .intro {
+            text-align: center;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .food-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .food-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .food-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .food-info {
+            padding: 20px;
+        }
+        
+        .food-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .food-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: #333;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .food-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            header {
+                height: 250px;
+                padding: 60px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ອາຫານລາວທີ່ນ່າກິນ</h1>
+        <p>ຄົ້ນພົບລົດຊາດທີ່ເປັນເອກະລັກຂອງອາຫານລາວ</p>
+    </header>
+    
+    <div class="container">
+        <div class="intro">
+            <h2>ຍິນດີຕ້ອນຮັບສູ່ອາຫານລາວ</h2>
+            <p>ອາຫານລາວແມ່ນທີ່ຮູ້ຈັກກັນດີສຳລັບລົດຊາດທີ່ເຂັ້ມຂຸ້ນ, ສົດຊື່ນ, ແລະ ເຜັດ. ຄົ້ນພົບອາຫານລາວທີ່ນ່າກິນທີ່ສຸດຢູ່ລຸ່ມນີ້.</p>
+        </div>
+        
+        <div class="food-grid">
+            <!-- ລາບ Larb -->
+            <div class="food-card">
+                <img src="OIP.jpg" alt="ລາບ - Larb" class="food-image">
+                <div class="food-info">
+                    <h3 class="food-name">ລາບ (Larb)</h3>
+                    <p class="food-description">ອາຫານປະຈຳຊາດຂອງລາວ, ລາບແມ່ນຊີ້ນບົດປະສົມກັບສະໝຸນໄພ, ຫອມບົວແດງ, ຫອມປ້ອມ, ແລະ ເຄື່ອງປຸງລົດຊາດຕ່າງໆ.</p>
+                </div>
+            </div>
+            
+            <!-- ຕຳໝາກຫຸ່ງ Papaya Salad -->
+            <div class="food-card">
+                <img src="laos-food-4.jpg" alt="ຕຳໝາກຫຸ່ງ - Papaya Salad" class="food-image">
+                <div class="food-info">
+                    <h3 class="food-name">ຕຳໝາກຫຸ່ງ (Tam Mak Hoong)</h3>
+                    <p class="food-description">ສະຫຼັດໝາກຫຸ່ງດິບທີ່ຕຳກັບໝາກເລັ່ນ, ໝາກເຜັດ, ປາແດກ, ແລະ ເຄື່ອງປຸງອື່ນໆ ເພື່ອສ້າງລົດຊາດເຜັດ ແລະ ສົ້ມ.</p>
+                </div>
+            </div>
+            
+            <!-- ແກງໜໍ່ໄມ້ Bamboo Soup -->
+            <div class="food-card">
+                <img src="OIP (1).jpg" alt="ແກງໜໍ່ໄມ້ - Bamboo Soup" class="food-image">
+                <div class="food-info">
+                    <h3 class="food-name">ແກງໜໍ່ໄມ້ (Kaeng No Mai)</h3>
+                    <p class="food-description">ແກງໜໍ່ໄມ້ແມ່ນແກງທີ່ເຮັດຈາກໜໍ່ໄມ້ອ່ອນ, ຊີ້ນ, ແລະ ສະໝຸນໄພຕ່າງໆ ທີ່ມີລົດຊາດເຂັ້ມຂຸ້ນ.</p>
+                </div>
+            </div>
+            
+            <!-- ປິ້ງປາ Grilled Fish -->
+            <div class="food-card">
+                <img src="ping-pa-1.jpg" alt="ປິ້ງປາ - Grilled Fish" class="food-image">
+                <div class="food-info">
+                    <h3 class="food-name">ປິ້ງປາ (Ping Pa)</h3>
+                    <p class="food-description">ປາທີ່ປິ້ງເທິງຖ່ານ, ປົກກະຕິແມ່ນປາແມ່ນ້ຳຂອງ, ເສີບພ້ອມກັບແຈ່ວ ແລະ ຜັກສົດ.</p>
+                </div>
+            </div>
+            
+            <!-- ເຂົ້າຫນຽວ Sticky Rice -->
+            <div class="food-card">
+                <img src="sticky-rice-thai-sticky-rice-bamboo-wooden-old-style-box-isolated-white-background.jpg" alt="ເຂົ້າຫນຽວ - Sticky Rice" class="food-image">
+                <div class="food-info">
+                    <h3 class="food-name">ເຂົ້າຫນຽວ (Khao Niew)</h3>
+                    <p class="food-description">ອາຫານຫຼັກຂອງຄົນລາວ, ເຂົ້າຫນຽວແມ່ນກິນກັບເກືອບທຸກຄາບເຂົ້າ ແລະ ກິນກັບອາຫານຕ່າງໆ.</p>
+                </div>
+            </div>
+            
+            <!-- ແຈ່ວບອງ Jaew Bong -->
+            <div class="food-card">
+                <img src="Prahok-Ktiss-is-ideal-for-people-who-like-herbs-and-vegetables.jpg" alt="ແຈ່ວບອງ - Jaew Bong" class="food-image">
+                <div class="food-info">
+                    <h3 class="food-name">ແຈ່ວບອງ (Jaew Bong)</h3>
+                    <p class="food-description">ນ້ຳພິກເຜັດທີ່ເຮັດຈາກໝາກເຜັດແຫ້ງ, ຫົວຜັກທຽມ, ຫົວຫອມແດງ, ແລະ ປາແດກ, ກິນກັບເຂົ້າຫນຽວ ຫຼື ຜັກ.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 ອາຫານລາວທີ່ນ່າກິນ | Delicious Laotian Food</p>
+    </footer>
+</body>
+</html>
